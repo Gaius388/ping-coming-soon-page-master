@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root{
+    font-size: 1em;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    width: 85%;
+    font-size: 16px;
+    margin: 5em auto 1em;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.intro h2{
+    font-size: 3.2rem;
+    margin-top: 0.9em;
+    color: gray;
+    font-weight: 300;
+}
+.intro b{
+    color: hsl(209, 33%, 12%);
+}
+.intro p{
+    margin: 0.8em 0 1.5em;
+    font-size: 1.3rem;
+}
+.email{
+    border-radius: 1.8em;
+    padding: 1.4em 20em 1.3em 1.4em;
+    border: 1px solid rgb(238, 236, 236);
+}
+.email::placeholder{
+    color: hsl(0, 0%, 59%);
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+.btn{
+    padding: 0.95em 2.8em;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    border-radius: 1.8em;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 0.7em;
+    cursor: pointer;
+}
+.err{
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    text-align: center;
+    display: none;
+}
+
+.section-2 img{
+    width: 55%;
+    margin: 5em auto 4em;
+}
+.icons img{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-left: 0.8em;
+    margin-bottom: 1em;
+}
+
+@media (max-width:768px){
+    .section-2 img{
+        width: 85%;
+        margin: 5em auto 4em;
+    } 
+    .inputField{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        display: block;
+        flex-direction: column;
+    }
+    .btn{
+        padding: 0.95em 6em;
+        margin-top: 1.8em;
+    }
+    .email{
+        padding: 1.4em 8em 1.3em 1.4em;
+    }
+    .intro h2{
+        font-size: 2.2rem;
+        
+    }
+    .email::placeholder{
+        color: hsl(0, 0%, 59%);
+        font-size: 0.9rem;
+    }
+    .intro p{
+        margin: 0.8em 0 1.5em;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:320px){
+    .btn{
+        padding: 0.95em 4em;
+        margin-top: 1.8em;
+        cursor: pointer;
+    }
+    .email{
+        padding: 1.4em 3em 1.3em 1.4em;
+        border: 1px solid rgb(238, 236, 236);
+    }
+}
