@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.intro h2{
+.intro h1{
     font-size: 3.2rem;
     margin-top: 0.9em;
     color: gray;
@@ -60,7 +60,7 @@ body{
     display: none;
 }
 
-.section-2 img{
+.section2 img{
     width: 55%;
     margin: 5em auto 4em;
 }
@@ -73,7 +73,7 @@ body{
 }
 
 @media (max-width:768px){
-    .section-2 img{
+    .section2 img{
         width: 85%;
         margin: 5em auto 4em;
     } 
@@ -92,7 +92,7 @@ body{
     .email{
         padding: 1.4em 8em 1.3em 1.4em;
     }
-    .intro h2{
+    .intro h1{
         font-size: 2.2rem;
         
     }
